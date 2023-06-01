@@ -3,6 +3,12 @@
     src: url("font/vag-world-bold.ttf") format("truetype");
 }
 
+@font-face {
+    font-family: 'Poppins';
+    src: url('./font/Poppins-Black.woff2') format('woff2'),
+        url('./font/Poppins-Black.woff') format('woff');
+}
+
 /* Контейнер */
 .container {
     font-family: "VAG World Bold", sans-serif;
@@ -447,6 +453,10 @@ span {
 
 /* Медіа-запит для мобільних пристроїв */
 @media (max-width: 767px) {
+    .container {
+        font-family: 'Poppins', sans-serif;
+    }
+
     nav ul {
         flex-direction: row;
         /* Змінити напрямок розташування елементів на горизонтальний */

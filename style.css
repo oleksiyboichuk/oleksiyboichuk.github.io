@@ -1,0 +1,584 @@
+@import url('https://fonts.cdnfonts.com/css/poppins');
+
+/* Контейнер */
+.container {
+    font-family: 'Poppins', 'sans-serif';
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: 'VAG World', sans-serif;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Заголовок */
+h1 {
+    margin-top: 20px;
+    text-align: center;
+    color: #ff007f;
+    margin-top: 0;
+    text-align: center;
+    margin-top: 80px;
+    font-size: 50px;
+    line-height: 70px;
+}
+
+/* Параграф */
+p {
+    font-size: 20px;
+    color: #1f0033;
+}
+
+/* Шапка */
+header {
+    margin: 0;
+    padding: 20px 0;
+}
+
+/* Слайдер */
+.slider {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.slider-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: calc(100% * 4);
+}
+
+.slide {
+    flex-shrink: 0;
+    width: calc(100% / 4);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+.slide img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    border-radius: 20px;
+
+}
+
+.slider-controls {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    gap: 10px;
+}
+
+.slider-controls button {
+    font-size: 14px;
+    padding: 5px 15px;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: background-color 1s ease-in-out;
+}
+
+/* Раздел "Приклади занять" */
+.activities {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.activity {
+    width: calc(33.33% - 10px);
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.activity img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.activity .hidden-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    height: auto;
+    transition: opacity 0.3s ease-in-out;
+    width: 100%;
+}
+
+.activity:hover img {
+    opacity: 0;
+}
+
+.activity:hover .hidden-img {
+    opacity: 1;
+}
+
+.activity {
+    display: inline-block;
+    position: relative;
+}
+
+.activity img.hidden-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    border-radius: 30px;
+}
+
+.act-imgs {
+    border-radius: 15px;
+}
+
+/* Остальные стили остаются без изменений */
+/* Продолжение общего CSS */
+
+/* Кнопки вперед/назад в слайдере */
+.slider-controls button {
+    font-family: 'VAG World', sans-serif;
+    text-transform: uppercase;
+    background-color: #ff007f;
+    color: #ffffff;
+    border: none;
+    padding: 7px 20px;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: background-color 1s ease-in-out;
+}
+
+.slider-controls button:hover {
+    background-color: #ffffff;
+    color: #000000;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Стили для активного слайда */
+.slide-img-1:hover {
+    background: url("./photo/programing.png") no-repeat 50% 50%;
+}
+
+/* Дополнительные стили для активностей */
+.activity {
+    background-color: #333333;
+    border-radius: 30px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.activity p {
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+/* Адаптивные стили */
+@media screen and (max-width: 768px) {
+
+    /* Кнопки вперед/назад в слайдере */
+    .slider-controls {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    /* Раздел "Приклади занять" */
+    .activities {
+        flex-direction: column;
+    }
+
+    .activity {
+        width: 100%;
+    }
+}
+
+/* Продолжение общего CSS */
+
+/* Дополнительные стили для активностей */
+.activities {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.activity {
+    width: calc(33.33% - 20px);
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Адаптивные стили */
+@media screen and (max-width: 768px) {
+
+    .container {
+        margin: 0 auto;
+    }
+
+    /* Кнопки вперед/назад в слайдере */
+    .slider-controls {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    /* Раздел "Приклади занять" */
+    .activities {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .activity {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .nav {
+        position: absolute;
+    }
+
+    iframe {
+        width: 700px;
+        border-radius: 20px;
+    }
+}
+
+
+
+
+.act-example {
+    color: #fff;
+    text-align: center;
+    font-size: 50px;
+    margin-top: 50px;
+    color: #333333;
+}
+
+.p-start {
+    margin-left: 50px;
+    margin-right: 10px;
+    color: #333333;
+    text-align: center;
+}
+
+.about-act {
+    color: #ff007f;
+    font-size: 20px;
+    text-align: center;
+}
+
+.section-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.location {
+    text-align: center;
+}
+
+iframe {
+    width: 1150px;
+    border-radius: 20px;
+}
+
+.location-heading {
+    font-size: 50px;
+    color: #ff007f;
+}
+
+/* .... */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    width: 100%;
+    height: 80px;
+    background-color: #333333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin: 0 20px;
+    position: relative;
+}
+
+nav a {
+    font-family: 'VAG World';
+    font-size: 18px;
+    text-decoration: none;
+    color: #333333;
+    position: relative;
+    color: #fff;
+
+}
+
+nav a:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: transparent;
+    bottom: -5px;
+    left: 0;
+    transition: background-color 0.3s ease-in-out;
+}
+
+nav a:hover:before {
+    background-color: #ff007f;
+}
+
+.section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.section h2 {
+    margin: 0;
+}
+
+.section:not(:last-child) {
+    margin-bottom: 50px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 100px auto 0;
+    font-family: 'VAG World';
+    background: rgb(255, 255, 255);
+}
+
+.contact {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+}
+
+.text-contact {
+    color: #ff007f;
+    font-size: 50px;
+    text-align: center;
+}
+
+span {
+    font-size: 70px;
+    color: #fff;
+    text-shadow: 2px 0 2px #ff007f,
+        0 2px 2px #ff007f,
+        -2px 0 2px #ff007f,
+        0 -2px 2px #ff007f;
+    letter-spacing: 5px;
+
+}
+
+.viber-img {
+    width: 150px;
+}
+
+.viber-img:hover {
+    width: 170px;
+    border-radius: 50%;
+    transition: width 0.3s ease-in-out;
+}
+
+.text-icon {
+    font-size: 30px;
+}
+
+.p-contact {
+    font-size: 30px;
+}
+
+.p-contact-disc {
+    margin-top: -25px;
+    opacity: 50%;
+}
+
+.p-contact-disc:hover {
+    background-color: #ff007f;
+    color: #fff;
+    border-radius: 20px;
+    user-select: none;
+    font-size: 25px;
+    transition: background-color 0.3s ease-in-out;
+    transition: font-size 0.3s ease-in-out;
+}
+
+
+
+/* Медіа-запит для мобільних пристроїв */
+@media (max-width: 767px) {
+    nav ul {
+        flex-direction: row;
+        /* Змінити напрямок розташування елементів на горизонтальний */
+        justify-content: start;
+        /* Вирівняти елементи по центру */
+    }
+
+    nav li {
+        margin: 0 10px;
+        justify-content: start;
+
+        /* Додати відступи між елементами навбару */
+    }
+
+    h1 {
+        font-size: 30px;
+        line-height: 50px;
+    }
+
+    span {
+        font-size: 50px;
+    }
+
+    .p-start {
+        margin-left: -2px;
+    }
+
+    .slider-controls button {
+        font-size: 20px;
+    }
+
+    #activies {
+        font-size: 40px;
+    }
+
+    .location-heading {
+        font-size: 50px;
+        hyphens: auto;
+    }
+
+    .section-center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .location {
+        text-align: center;
+    }
+
+    .map iframe {
+        width: 100%;
+        max-width: 600px;
+        height: 450px;
+        border: 0;
+        border-radius: 20px;
+    }
+
+    .location-heading {
+        font-size: 32px;
+        color: #ff007f;
+    }
+
+    .address {
+        font-size: 20px;
+        opacity: 50%;
+    }
+
+    nav {
+        height: 50px;
+    }
+
+    nav ul li {
+        margin: 10px 7px;
+        font-size: 15px;
+    }
+
+    nav ul li a {
+        font-size: 17px;
+    }
+
+    .text-contact {
+        line-height: 45px;
+    }
+
+    .viber-img {
+        width: 100px;
+    }
+
+    nav a:before {
+        bottom: -1px;
+    }
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Залишок CSS стилів для навбару */
+
+/* Медіа-запит для мобільних пристроїв */
+@media (max-width: 767px) {
+    .container {
+        padding: 20px 10px;
+        /* Зменшити відступи по боках для мобільних пристроїв */
+    }
+}
+
+#prevBtn img,
+#nextBtn img {
+    display: flex;
+    width: 30px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0px 10px;
+}
+
+footer {
+    font-family: 'VAG World', sans-serif;
+    position: relative;
+    text-align: center;
+    top: 20px;
+    width: 100%;
+    background: #333333;
+    color: #fff;
+    padding: 5px 0px;
+}

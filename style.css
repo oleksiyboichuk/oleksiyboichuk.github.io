@@ -457,7 +457,7 @@ span {
 /* Медіа-запит для мобільних пристроїв */
 @media (max-width: 767px) {
     .container {
-        font-family: 'Poppins', sans-serif;
+        font-family: 'Aqum', sans-serif;
     }
 
     nav ul {

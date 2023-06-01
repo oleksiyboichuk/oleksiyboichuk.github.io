@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
     font-family: "VAG World Bold";
     src: url("font/vag-world-bold.ttf") format("truetype");
 }
@@ -7,14 +7,17 @@
     font-family: 'Poppins';
     src: url('./font/Poppins-Black.woff2') format('woff2'),
         url('./font/Poppins-Black.woff') format('woff');
+} */
+@font-face {
+    font-family: 'Aqum';
+    src: url('./font/aqum-2-classic.otf') format('woff2');
 }
 
 /* Контейнер */
 .container {
-    font-family: "VAG World Bold", sans-serif;
+    font-family: "Aqum", sans-serif;
     max-width: 1200px;
     margin: 0 auto;
-    font-family: 'VAG World', sans-serif;
     background: #fff;
     padding: 20px;
     border-radius: 10px;
@@ -158,7 +161,7 @@ header {
 
 /* Кнопки вперед/назад в слайдере */
 .slider-controls button {
-    font-family: 'VAG World', sans-serif;
+    font-family: 'Arial', sans-serif;
     text-transform: uppercase;
     background-color: #ff007f;
     color: #ffffff;
@@ -345,7 +348,7 @@ nav li {
 }
 
 nav a {
-    font-family: 'VAG World';
+    font-family: 'Aqum', sans-serif;
     font-size: 18px;
     text-decoration: none;
     color: #333333;

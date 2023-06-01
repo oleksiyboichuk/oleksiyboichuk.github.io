@@ -32,7 +32,7 @@ h1 {
     text-align: center;
     margin-top: 80px;
     font-size: 50px;
-    line-height: 70px;
+    line-height: 50px;
 }
 
 /* Параграф */
@@ -372,6 +372,11 @@ nav a:hover:before {
     background-color: #ff007f;
 }
 
+nav ul li a:hover {
+    color: #ffe4f1;
+    transition: color 0.3s ease-in-out;
+}
+
 .section {
     height: 100vh;
     display: flex;
@@ -411,10 +416,10 @@ nav a:hover:before {
 span {
     font-size: 70px;
     color: #fff;
-    text-shadow: 2px 0 2px #ff007f,
-        0 2px 2px #ff007f,
-        -2px 0 2px #ff007f,
-        0 -2px 2px #ff007f;
+    text-shadow: 3px 0 3px #333333,
+        0 3px 3px #333333,
+        -3px 0 3px #333333,
+        0 -3px 3px #333333;
     letter-spacing: 5px;
 
 }
@@ -457,6 +462,7 @@ span {
 /* Медіа-запит для мобільних пристроїв */
 @media (max-width: 767px) {
     .container {
+        text-transform: uppercase;
         font-family: 'Aqum', sans-serif;
     }
 
@@ -475,91 +481,97 @@ span {
     }
 
     h1 {
+        margin-top: 30px;
         font-size: 30px;
-        line-height: 50px;
-    }
-
-    span {
-        font-size: 50px;
-    }
-
-    .p-start {
-        margin-left: -2px;
-    }
-
-    .slider-controls button {
-        font-size: 20px;
-    }
-
-    #activies {
-        font-size: 40px;
-    }
-
-    .location-heading {
-        font-size: 50px;
-        hyphens: auto;
-    }
-
-    .section-center {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-    }
-
-    .location {
-        text-align: center;
-    }
-
-    .map iframe {
-        width: 100%;
-        max-width: 600px;
-        height: 450px;
-        border: 0;
-        border-radius: 20px;
-    }
-
-    .location-heading {
-        font-size: 32px;
-        color: #ff007f;
-    }
-
-    .address {
-        font-size: 20px;
-        opacity: 50%;
-    }
-
-    nav {
-        height: 50px;
-    }
-
-    nav ul li {
-        margin: 10px 7px;
-        font-size: 15px;
-    }
-
-    nav ul li a {
-        font-size: 17px;
-    }
-
-    .text-contact {
         line-height: 45px;
     }
 
-    .viber-img {
-        width: 100px;
+    span {
+        line-height: 60px;
+        font-size: 50px;
+        color: #ffd900;
     }
+}
 
-    nav a:before {
-        bottom: -1px;
-    }
+.p-start {
+    margin-left: -2px;
+}
+
+.slider-controls button {
+    font-size: 20px;
+}
+
+#activies {
+    font-size: 38px;
+    line-height: 45px;
+    color: #333333;
+}
+
+.location-heading {
+    font-size: 50px;
+    hyphens: auto;
+}
+
+.section-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.location {
+    text-align: center;
+}
+
+.map iframe {
+    width: 100%;
+    max-width: 600px;
+    height: 450px;
+    border: 0;
+    border-radius: 20px;
+}
+
+.location-heading {
+    font-size: 38px;
+    color: #ff007f;
+}
+
+.address {
+    font-size: 20px;
+    opacity: 50%;
+}
+
+nav {
+    height: 60px;
+}
+
+nav ul li {
+    margin: 10px 5px;
+    font-size: 10px;
+}
+
+nav ul li a {
+    font-size: 14px;
+}
+
+.text-contact {
+    line-height: 45px;
+    font-size: 38px;
+}
+
+.viber-img {
+    width: 100px;
+}
+
+nav a:before {
+    bottom: -4px;
+}
 }
 
 body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
 }
 
 .container {
@@ -589,7 +601,7 @@ body {
 }
 
 footer {
-    font-family: 'VAG World', sans-serif;
+    font-family: 'Aqum', sans-serif;
     position: relative;
     text-align: center;
     top: 20px;
